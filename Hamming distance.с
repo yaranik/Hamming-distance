@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+# define n 10
+int main(void)
+{
+	int i,a,b,c,HD;
+	char word_f[n];
+	char word_s[n];
+	printf("Enter first word:");
+	scanf("%s", word_f);
+	printf("Enter second word:");
+	scanf("%s", word_s);
+	a = strlen(word_f);
+	b = strlen(word_s);
+	if (a > b){c = a;}
+	else {c = b;};
+	HD = 0;
+	
+	for ( i = 0; i <c; i++ ) 
+	{
+	if (word_f[i] == word_s[i])
+	
+	{HD = HD +0;} else {HD = HD +1;};
+	
+	}
+	
+	printf("%ld",HD);
+	
+   return 0;	
+
+}
